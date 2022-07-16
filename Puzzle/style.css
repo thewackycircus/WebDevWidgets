@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.empties {
+    display: flex;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.peices {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+}
+
+.peices .empty {
+    margin: 0 3px;
+}
+
+.peice {
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#peice1 {
+    background-image: url('/imgs/puzzle-peice-1.png');
+    background-size: cover;
+}
+#peice2 {
+    background-image: url('/imgs/puzzle-peice-4.png');
+    background-size: cover;
+}
+#peice3 {
+    background-image: url('/imgs/puzzle-peice-3.png');
+    background-size: cover;
+}
+#peice4 {
+    background-image: url('/imgs/puzzle-peice-2.png');
+    background-size: cover;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: white;
+}
